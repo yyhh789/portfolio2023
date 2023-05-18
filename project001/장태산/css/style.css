@@ -1,4 +1,4 @@
-@charset 'UTF-8';
+@charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 
 /* 전체설정 */
@@ -7,6 +7,147 @@ ul,ol{list-style: none;}
 a {text-decoration: none; color: black;}
 img {vertical-align: bottom; border: none;}
 body {font-family: 'Nanum Gothic', sans-serif;font-size: 14px;}
+
+/* 로고설정 */
+.logo {width: 150px;
+height: 90px;
+background-image: url(../img/logo.png);
+text-indent: -99999px;
+background-size: contain;
+background-repeat: no-repeat;}
+
+/* gnb설정 */
+.gnb {}
+.gnb ul {display: flex;}
+.gnb ul li {}
+.gnb ul li a{padding: 10px 50px; color: #333;}
+
+/* hero설정 */
+.hero {width: 100%;height: 80vh;
+overflow: hidden;}
+
+.hero img {width: 100%;
+transform: translateY(-100px);}
+/* hero화살표설정 */
+    .hero_arrow {position: relative;
+    display: flex;
+    justify-content: space-between;
+margin-top: 20px;}
+    .hero_arrow span {display: block;
+    font-size: 28px;
+    font-weight: bold;
+    color: #006837;
+    padding: 15px;
+    cursor: pointer;}
+
+    .hero_arrow span:hover {color: #333;}
+
+    .hero_num {position: absolute;
+        top: 30%;
+        right: 20%;
+    font-weight: bold;
+font-size: 14px;}
+.hero_num em {font-style: normal;
+font-size: 18px;
+margin-right: 5px;
+color: #006837;}
+
+
+/* 전체타이틀 설정 */
+.title {font-size: 28px;
+    margin-bottom: 20px;}
+.title::before {content: '\00A4';
+                    color: #006837;
+                    font-size: 12px;
+                    margin-right: 5px;}
+.info .top_txt {}
+.info .bottom_txt {}
+
+/* info설정 */
+.info .title {font-size: 28px;
+    margin-bottom: 20px;}
+.info .title::before {content: '\00A4';
+                    color: #006837;
+                    font-size: 12px;
+                    margin-right: 5px;}
+.info .top_txt {font-size: 14px;
+margin-bottom: 15px;
+color: #474747;}
+.info .top_txt em {font-weight: bold;
+font-style: normal;}
+.info .bottom_txt_txt {font-size: 12px;
+letter-spacing: 2px;}
+.info .bottom_txt em {font-style: normal;
+    font-size: 22px;
+    font-weight: bold; 
+    color: #f15a25;}
+
+
+/* 박스위아래여백설정 */
+.box3 {padding-bottom: 20px;}
+.box4 {padding-bottom: 40px;}
+.box6 {padding: 50px;}
+
+/* 문의하기설정 */
+.qnaimg {width: 100%;}
+.qna {}
+.qna h2 {font-size: 22px;
+color: #006837;
+font-weight: bold;}
+.qna .listbox {display: flex;
+margin-top: 20px;
+margin-bottom: 20px;
+align-items: center;
+justify-content: space-between;}
+.qna ul {width: 60%;}
+.qna li {padding: 15px 0px;
+border-bottom: dotted 2px #ddd;
+margin-bottom: 10px;}
+.qna li::before{content: '\2022';
+font-size: 24px;
+vertical-align: middle;
+color: #006837;}
+.qna li:nth-child(2)::before{color: #f15a25;}
+
+.qna button {border: none;
+    padding: 15px 45px;
+background-color: #006837;
+color: white;
+cursor: pointer;}
+.qna button:hover {opacity: 0.6;}
+.qna p {font-size: 18px;
+letter-spacing: 1px;
+margin-top: 20px;}
+
+/* 주변관광안내설정 */
+.tour {background-color: rgba(241, 90, 37, 0.6);
+padding: 20px 40px;}
+.tour p {margin-top: -20px;
+margin-bottom: 20px;}
+.tour ul {display: flex;}
+.tour li {padding: 20px;color: #bbb;}
+.tour .imgBox {position: relative;;
+    background-color: #006837;
+margin-top: 20px;
+height: 380px;}
+.tour .imgBox>div {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    left: 0;
+    top: 0;
+height: 380px;
+display: none;}
+.tour .imgBox a {display: block;
+    padding: 20px 40px;
+font-size: 18px;
+background-color: #f15a25;
+color: #fff;}
+.tour .imgBox img {position: absolute;
+right: -100px;
+top:50px;}
+.tour .imgBox>div.on {display: flex;}
 
 /* 미디어쿼리구간 */
 
@@ -22,11 +163,14 @@ body {font-family: 'Nanum Gothic', sans-serif;font-size: 14px;}
 
 
 /* 박스1과 박스2의 가로정렬 */
-.boxA {display: flex; justify-content: space-between;}
+.boxA {display: flex;justify-content: space-between;
+align-items: center;}
+
 
 /* 박스5-1과 박스5-2의 가로정렬 */
-.box5 {display: flex;}
-.box5-1,.box5-2 {width: 50%;}
+.box5 {display: flex;
+justify-content: space-between;}
+.box5-1,.box5-2 {width: 46%;}
 
 
 /* 박스9-1,박스9-2,박스9-3의 가로정렬 */
@@ -37,4 +181,11 @@ body {font-family: 'Nanum Gothic', sans-serif;font-size: 14px;}
 
 
 
+}
+
+/* 1140px 이상일떄 */
+@media (min-width:1140px)
+{
+    header,.box3-2,.box4-1,.box5,.box6 {width: 1100px;
+    margin: 0 auto;}
 }

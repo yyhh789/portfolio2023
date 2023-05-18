@@ -1,57 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>서울숲</title>
     <!-- 그리드가이드연결 -->
-    <link rel="stylesheet" href="/장태산/css/grid-guide.css">
+    <!-- <link rel="stylesheet" href="/장태산/css/grid-guide.css"> -->
     <!-- 외부스타일시트연결 -->
-    <link rel="stylesheet" href="/장태산/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+        $(document).ready(function(){
+            // listtitle의 li를 클릭했을떄, 각 순번에 맞는 listbox의 ul이 보여라
+            $('.tour li').click(function(){
+                // /변수만들기(순번찾기)
+                let a =$(this).index()
+                console.log(a)
+
+                $('.imgBox>div').hide()
+                $('.imgBox>div').eq(a).show()
+            })
+
+        })
+    </script>
+
+
+
+
 </head>
+
 <body>
     <header class="boxA">
-        <div class="box1">로고</div>
-        <div class="box2">메뉴</div>
+        <div class="box1">
+            <h1 class="logo">장태산자연휴향림</h1>
+        </div>
+        <div class="box2">
+            <nav class="gnb">
+                <ul>
+                    <li><a href="#">휴양림소개</a></li>
+                    <li><a href="#">시설및이용안내</a></li>
+                    <li><a href="#">숲체험</a></li>
+                    <li><a href="#">열린공간</a></li>
+                    <li><a href="#">창작마당</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <section class="boxB">
         <article class="box3">
-            <div class="box3-1">heroimg</div>
-            <div class="box3-2">화살표</div>
+            <div class="box3-1">
+                <div class="hero">
+                    <img src="img/header_bg.jpg" alt="">
+                </div>
+            </div>
+            <div class="box3-2">
+                <div class="hero_arrow">
+                    <span class="left">
+                        << /span>
+                            <span class="rigth">></span>
+                            <div class="hero_num">
+                                <em>01</em>/03
+                            </div>
+                </div>
+            </div>
         </article>
         <article class="box4">
-            <div class="box4-1">장태산소개</div>
+            <div class="box4-1">
+                <div class="info">
+                    <h1 class="title">Lorem ipsum dolor sit amet</h1>
+                    <p class="top_txt"><em>Lorem ipsum dolor sit amet</em> <br> consectetur</p>
+                    <p class="bottom_txt">Lorem ipsum dolor sit, amet <br> consectetur <br><em> adipisicing elit.</em>
+                    </p>
+                </div>
+            </div>
         </article>
-        <article class="box5">
-            <div class="box5-1">img</div>
-            <div class="box5-2">문의하기</div>
+        <article class="box5 qna">
+            <div class="box5-1">
+                <img src="img/g001.jpg" alt="" class="qnaimg">
+            </div>
+            <div class="box5-2">
+                <h2>장태산자연휴향림</h2>
+                <div class="listbox">
+                    <ul>
+                        <li>list1</li>
+                        <li>list2</li>
+                        <li>list3</li>
+                    </ul>
+                    <button>문의하기</button>
+                </div>
+                <p>대전장태산휴양림 주소</p>
+            </div>
         </article>
-        <article class="box6">
-            <div class="box6-1">주변관광안내</div>
-            <div class="box6-2">tab공간</div>
-            <div class="box6-3">상세이미지</div>
+        <article class="box6 tour">
+            <div class="box6-1">
+                <h1 class="title">주변관광안내</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident reprehenderit </p>
+            </div>
+            <div class="box6-2">
+                <ul>
+                    <li>tab1</li>
+                    <li>tab2</li>
+                    <li>tab3</li>
+                    <li>tab4</li>
+                    <li>tab5</li>
+                    <li>tab6</li>
+                    <li>tab7</li>
+                    <li>tab8</li>
+                    <li>tab9</li>
+                </ul>
+            </div>
+            <div class="box6-3">
+                <div class="imgBox">
+                    <div class="on"><a href="#">1.바로가기</a>
+                        <img src="https://picsum.photos/1000/300" alt="">
+                    </div>
+                    <div class="on"><a href="#">2.바로가기</a>
+                        <img src="https://picsum.photos/1000/300" alt="">
+                    </div>
+                    <div><a href="#">3.바로가기</a>
+                        <img src="https://picsum.photos/1000/300" alt="">
+                    </div>
+                    <div><a href="#">4.바로가기</a>
+                        <img src="https://picsum.photos/1000/300" alt="">
+                    </div>
+                    <div><a href="#">5.바로가기</a>
+                        <img src="https://picsum.photos/1000/300" alt="">
+                    </div>
+                    <div><a href="#">6.바로가기</a>
+                        <img src="https://picsum.photos/1000/300" alt="">
+                    </div>
+                    <div><a href="#">7.바로가기</a>
+                        <img src="https://picsum.photos/1000/300" alt="">
+                    </div>
+                    <div><a href="#">8.바로가기</a>
+                        <img src="https://picsum.photos/1000/300" alt="">
+                    </div>
+                    <div><a href="#">9.바로가기</a>
+                        <img src="https://picsum.photos/1000/300" alt="">
+                    </div>
+                </div>
+            </div>
         </article>
         <article class="box7">
-            <div class="box7-1">notice</div>
-            <div class="box7-2">padgenation</div>
-            <div class="box7-3">공지사항내용</div>
+            <div class="box7-1">
+                <h1 class="title">notice</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="box7-2">
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                </ul>
+            </div>
+            <div class="box7-3">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <div class="txt">
+                                <h3>타이틀내용</h3>
+                                <em>작성자</em>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae accusamus ab
+                                voluptatibus? Deserunt, aliquam? Tempore consectetur doloribus mollitia temporibus
+                                dolores earum eligendi quod cumque. Itaque dolor ipsa obcaecati deserunt esse.
+                                <span>
+                                    2022.10.10
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="txt">
+                                <h3>타이틀내용</h3>
+                                <em>작성자</em>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae accusamus ab
+                                voluptatibus? Deserunt, aliquam? Tempore consectetur doloribus mollitia temporibus
+                                dolores earum eligendi quod cumque. Itaque dolor ipsa obcaecati deserunt esse.
+                                <span>
+                                    2022.10.10
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </article>
         <article class="box8">
-            <div class="box8-1">포토갤러리</div>
+            <div class="box8-1">
+                <h1 class="title">
+                    <ul>
+                        <li><img src="" alt=""></li>
+                        <li><img src="" alt=""></li>
+                        <li><img src="" alt=""></li>
+                        <li><img src="" alt=""></li>
+                        <li><img src="" alt=""></li>
+                    </ul>
+                    <ul>
+                        <li><img src="" alt=""></li>
+                        <li><img src="" alt=""></li>
+                        <li><img src="" alt=""></li>
+                        <li><img src="" alt=""></li>
+                        <li><img src="" alt=""></li>
+                    </ul>
+                </h1>
+            </div>
             <div class="box8-2">사진트레일러</div>
         </article>
         <article class="box9">
-            <div class="box9-1">자주하는질문</div>
-            <div class="box9-2">예약시주의사항</div>
-            <div class="box9-3">프로그램예약</div>
+            <div class="box9-1">
+                <div class="qna">
+                    <h2>자주하는질문</h2>
+                    <ul>
+                        <li>
+                            <strong> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis praesentium
+                                ap</strong>
+                            <em>eriam, eligendi tempora cupiditate, fugit error eaque, rerum similique porro doloremque
+                                soluta iure dicta deleniti. Cumque totam ullam fuga? Atque?</em>
+                        </li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box9-2">
+                <div class="reser">
+                    <h2>예약시주의사항</h2>
+                    <ul>
+                        <li>주의사항안내문1</li>
+                        <li>주의사항안내문2</li>
+                        <li>주의사항안내문3</li>
+                        <li>주의사항안내문4</li>
+                        <li>주의사항안내문5</li>
+                        <li>주의사항안내문6</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box9-3">
+                <div class="progrem">
+                    <h2>프로그램예약안내</h2>
+                    <div class="listBox">
+                        <div>가족숲체험<span>예약하기</span></div>
+                        <div>단체숲체험<span>예약하기</span></div>
+                    </div>
+                </div>
+            </div>
         </article>
     </section>
     <footer class="boxC">footer</footer>
 
 
 
-<!--box6 탭은 여러박스로 나눈다 -->
-<!-- box7 페이지네이션-->
+    <!--box6 탭은 여러박스로 나눈다 -->
+    <!-- box7 페이지네이션-->
+    <!-- https://picsum.photos/ -->
 </body>
+
 </html>
