@@ -20,13 +20,6 @@ img {
     border: none;
 }
 
-.boxA,
-.boxB p,
-section,
-footer p {
-    width: 1440px;
-    margin: 0 auto;
-}
 
 /* 헤더 */
 /* boxA */
@@ -83,7 +76,7 @@ footer p {
 
 
 .boxB p {
-    margin-top: 200PX;
+    padding-top:200px;
     text-align: start;
     font-weight: 700;
     font-size: 70px;
@@ -791,19 +784,22 @@ footer p {
 footer {
     height: 125px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
+align-items: center;
     background-color: #D9D9D9;
     font-style: normal;
 }
 
 footer p {
-    display: flex;
-    justify-content: flex-end;
-    font-style: normal;
     font-weight: 400;
     font-size: 30px;
     line-height: 30px;
     letter-spacing: 0.05em;
     color: #010101;
 }
+
+
+
+.boxA,.boxB ,section,footer  {
+    width: 1440px;
+    margin: 0 auto;}
