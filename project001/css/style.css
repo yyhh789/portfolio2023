@@ -199,20 +199,31 @@ footer p {
 }
 
 .box2 .box2-1A {
-    margin-top: -550px;
+    text-align: center;
+    font-size: 120px;
+    color: white;
+    margin-top: -600px;
     position: absolute;
     width: 130px;
     z-index: 1;
 }
 
-.box2 .box2-1B {
-    margin-top: -550px;
-    margin-left: -130px;
+
+.box2 .box2-1A:hover{color: #cccbcb;}
+
+
+.box2 .box2-1B {right: 130px;
+    font-size: 120px;
+    text-align: center;
+    color: white;
+    margin-right: -130px;
+    margin-top: -600px;
     position: absolute;
     width: 130px;
-    z-index: 1;
+    z-index: 1; 
 }
 
+.box2 .box2-1B:hover{color: #cccbcb;}
 
 
 .box2-3 {
