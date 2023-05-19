@@ -202,7 +202,7 @@ img {
 }
 
 
-.box2 .box2-1A:hover{color: #cccbcb;}
+.box2 .box2-1A:hover{color: #a0a0a0;}
 
 
 .box2 .box2-1B {right: 130px;
@@ -216,7 +216,7 @@ img {
     z-index: 1; 
 }
 
-.box2 .box2-1B:hover{color: #cccbcb;}
+.box2 .box2-1B:hover{color: #a0a0a0;}
 
 
 .box2-3 {
@@ -308,8 +308,7 @@ img {
 }
 
 .box3-2 p:hover {color: white;
-    background-color: #e0f795;
-}
+    background-color: #afc273;}
 .box3-2 p:hover em{color: white;}
 
 .box3-2 em {
@@ -372,7 +371,7 @@ img {
 }
 
 .box4-2 p:hover {color: white;
-    background-color: #e0f795;
+    background-color: #afc273;
 }
 .box4-2 p:hover em{color: white;}
 
@@ -421,15 +420,14 @@ img {
 
 }
 
-.box5-A1 li a {
+.box5-A1 li a {font-weight: bold;
     font-size: 18px;
     color: #555555;
 }
 
-.box5-A1 li em {
+.box5-A1 li em {font-weight: bold;
     font-style: normal;
-    color: #72873D;
-}
+    color: #72873D;}
 
 .box5-A1 li:nth-child(1) a {
     font-weight: bold;
@@ -784,13 +782,13 @@ img {
 footer {
     height: 125px;
     display: flex;
-    justify-content: flex-end;
 align-items: center;
     background-color: #D9D9D9;
     font-style: normal;
 }
 
-footer p {
+footer p { display: flex;
+    justify-content: flex-end;
     font-weight: 400;
     font-size: 30px;
     line-height: 30px;
@@ -800,6 +798,6 @@ footer p {
 
 
 
-.boxA,.boxB ,section,footer  {
+.boxA,.boxB p,section,footer p {
     width: 1440px;
     margin: 0 auto;}
