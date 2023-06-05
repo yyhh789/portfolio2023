@@ -1,0 +1,32 @@
+@charset 'UTF-8';
+*{margin: 0;
+padding: 0;}
+ul,ol{list-style: none;}
+a {text-decoration: none;color: black;}
+img {vertical-align: bottom;border: none;}
+body{background-color: black;}
+
+.header {}
+.header .snsset {display: flex;
+justify-content: end;
+padding: 35px;}
+.header .snsset li {padding-left: 22px;}
+.header .menu {display: flex;
+justify-content: space-around;
+align-items: center;
+background-color: #212121;
+padding: 55px;}
+.header .menu li a{font-size: 38px;
+font-weight: bold;
+color: #E50112;}
+.header .menu li a:hover {color: white;}
+.header div{width: 100%;
+position: relative;}
+.header div img {width:100%;}
+.header div p {position: absolute;
+font-size: 50px;
+text-align: center;
+top: 350px;
+right: 25%;
+color: white;
+font-weight: bold;}
