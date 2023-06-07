@@ -4,8 +4,9 @@ padding: 0;}
 ul,ol{list-style: none;}
 a {text-decoration: none;color: black;}
 img {vertical-align: bottom;border: none;}
-body{background-color: black;}
-
+body{background-color: black;
+color: white;}
+/* header */
 .header {}
 .header .snsset {display: flex;
 justify-content: end;
@@ -21,12 +22,76 @@ font-weight: bold;
 color: #E50112;}
 .header .menu li a:hover {color: white;}
 .header div{width: 100%;
-position: relative;}
-.header div img {width:100%;}
+    height: 700px;
+position: relative;
+overflow: hidden;}
+.header div img {width:100%;
+height: 100%;}
 .header div p {position: absolute;
+    width: 1300px;
+    height: 122px;
 font-size: 50px;
 text-align: center;
-top: 350px;
-right: 25%;
+top: 50%;
+left: 50%;
+margin-left: -650px;
+margin-top: -61px;
 color: white;
 font-weight: bold;}
+/* history */
+.history {padding-top: 113px;}
+.history h2 {padding: 26px;
+    font-size: 58px;
+    font-weight: bold;
+    color: #E50112;
+    text-align: center;
+    border-top:5px solid #E50112;
+    border-bottom:5px solid #E50112;}
+.history  ul{}
+.history li{padding: 125px;
+    display: flex;
+    align-items: center;
+    color: white;
+    line-height: 30px;}
+    .history li p {padding-left: 70px;
+    font-size: 18px;
+font-weight: bold;}
+.history li b {font-size: 38px;
+line-height: 40px;}
+.history li img {padding-left: 100px;}
+.history li:nth-child(2) p{padding-left:100px;}
+/* brand */
+.brand {}
+.brand h2 {padding: 26px;
+    font-size: 58px;
+    font-weight: bold;
+    color: #E50112;
+    text-align: center;
+    border-top:5px solid #E50112;
+    border-bottom:5px solid #E50112;}
+    .brand p {color: white;
+    font-weight: bold;
+font-size: 37px;}
+.brand li {display: flex;}
+.brand .li1 {width: 50%;
+height: 100%;
+flex-wrap: wrap;}
+.brand .il1img {width: 50%;}
+.brand li:nth-child(1){width: 100%;
+padding-top: 84px;
+height: 800px;}
+.brand li:nth-child(2) {justify-content: center;}
+.brand li:nth-child(3) {justify-content: center;}
+.brand li:nth-child(4) {justify-content: center;}
+.brand li:nth-child(5) {justify-content: center;}
+.brand li:nth-child(6) {justify-content: center;}
+.brand li:nth-child(6) .binbox{width: 239px;
+height: 239px;
+background-color: black;}
+
+.brand li div {display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+width: 239px;padding: 10px 50px;}
+.brand li div p {font-size: 18px;}
