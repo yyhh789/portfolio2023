@@ -24,9 +24,10 @@ color: #E50112;}
 .header div{width: 100%;
     height: 700px;
 position: relative;
-overflow: hidden;}
-.header div img {width:100%;
-height: 100%;}
+background-image: url(../img/main\ 1.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size:cover}
 .header div p {position: absolute;
     width: 1300px;
     height: 122px;
@@ -60,38 +61,132 @@ font-weight: bold;}
 line-height: 40px;}
 .history li img {padding-left: 100px;}
 .history li:nth-child(2) p{padding-left:100px;}
+
+
 /* brand */
 .brand {}
 .brand h2 {padding: 26px;
-    font-size: 58px;
-    font-weight: bold;
-    color: #E50112;
-    text-align: center;
-    border-top:5px solid #E50112;
-    border-bottom:5px solid #E50112;}
-    .brand p {color: white;
-    font-weight: bold;
+font-size: 58px;
+font-weight: bold;
+color: #E50112;
+text-align: center;
+border-top:5px solid #E50112;
+border-bottom:5px solid #E50112;}
+
+.brand1{width: 100%;
+height: 700px;
+display: flex;}
+.brand1 .brand_box {width: 50%;
+display: flex;
+justify-content: end;
+align-items: center;}
+.brand1 .brand1_1 {text-align: center;}
+.brand1 .brand1_3 {display: flex;
+    align-items: center;
+    justify-content:start;
+width: 50%;
+height: 100%;}
+
+.brand p {color: white;
+font-weight: bold;
 font-size: 37px;}
 .brand li {display: flex;}
-.brand .li1 {width: 50%;
-height: 100%;
-flex-wrap: wrap;}
-.brand .il1img {width: 50%;}
-.brand li:nth-child(1){width: 100%;
-padding-top: 84px;
-height: 800px;}
-.brand li:nth-child(2) {justify-content: center;}
-.brand li:nth-child(3) {justify-content: center;}
-.brand li:nth-child(4) {justify-content: center;}
-.brand li:nth-child(5) {justify-content: center;}
-.brand li:nth-child(6) {justify-content: center;}
-.brand li:nth-child(6) .binbox{width: 239px;
-height: 239px;
-background-color: black;}
 
 .brand li div {display: flex;
 justify-content: center;
 align-items: center;
 flex-wrap: wrap;
 width: 239px;padding: 10px 50px;}
+
 .brand li div p {font-size: 18px;}
+
+.brand li:nth-child(1) {justify-content: center;}
+.brand li:nth-child(2) {justify-content: center;}
+.brand li:nth-child(3) {justify-content: center;}
+.brand li:nth-child(4) {justify-content: center;}
+.brand li:nth-child(4) .binbox{width: 239px;
+height: 239px;
+background-color: black;}
+.brand li:nth-child(5) {display: flex;
+justify-content: center;
+padding-top: 130px;
+padding-bottom: 170px;}
+.brand li:nth-child(5) div {
+font-size: 38px;
+width: 406px;
+height: 121px;
+background: #E50112;}
+.brand li:nth-child(5) a {font-weight: bold;
+color: white;}
+
+
+
+
+.story {width: 100%;display: flex;}
+.info {width: 50%;
+display: flex;
+justify-content: end;}
+.storyimg{width: 50%;
+display: flex;
+justify-content: center;}
+
+.storyimg img {width: 80%;}
+.info p {font-weight: bold;
+font-size: 18px;}
+.info b{font-size: 58px;
+font-weight: bold;}
+.info em {font-size: 28px;
+font-weight: bold;
+font-style: normal;}
+
+.character{width: 100%;
+display: flex;}
+.character .character_img{width: 50%;display: flex;
+justify-content: center;}
+.character .character_img img {width: 55%;}
+.character .character_info {width: 50%;
+display: flex;
+justify-content: start;
+align-items: center;}
+.character .character_info p {font-weight: bold;
+font-size: 26px;}
+.character .character_info b {font-size: 58px;
+    font-weight: bold;}
+
+.magazine {padding-top: 234px;}
+.magazine h2{padding: 26px;
+    font-size: 58px;
+    font-weight: bold;
+    color: #E50112;
+    text-align: center;
+    border-top:5px solid #E50112;
+    border-bottom:5px solid #E50112;}
+.magazine .magazine_box{padding-bottom: 74px;}
+.magazine .magazine_video{
+width: 100%;
+height: 621px;
+background-image: url(../img/hongbo.jpg);
+background-repeat: no-repeat;
+background-size:contain;
+background-position: center;}
+.magazine .snsset1 {display: flex;
+justify-content: center;
+align-items: center;}
+.magazine .snsset1 {padding-bottom: 229px;}
+.magazine .snsset1 li {padding: 100px;
+}
+.magazine .snsset1 a {display: block;}
+.magazine .snsset1:nth-child(1) a:hover{
+    background-color: lightcyan;}
+
+
+/* footer */
+.footer {background-color: #212121;
+height: 200px;
+display: flex;
+justify-content: center;
+align-items: center;}
+.footer p{padding-left: 72px;}
+
+
+
