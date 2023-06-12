@@ -1,0 +1,305 @@
+@charset 'UTF-8';
+
+/*전체설정 */
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: n e;
+  color: #000;
+}
+img {
+  vertical-align: bottom;
+}
+
+/* 레이아웃설정 */
+
+header {
+  background-color: #ddd;
+}
+nav {
+  background-color: #ccc;
+}
+section {
+  background-color: aqua;
+}
+
+article:nth-child(1) {
+  background-color: #999;
+}
+article:nth-child(2) {
+  background-color: #888;
+}
+article:nth-child(3) {
+  background-color: #777;
+}
+article:nth-child(4) {
+  background-color: #666;
+}
+
+/* 헤더설정 */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+
+  position: absolute;
+  left: 5%;
+  top: 0;
+  z-index: 999;
+}
+header h1 {
+  width: 120px;
+  padding: 10px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .gnb {
+  display: flex;
+}
+.gnb li {
+}
+.gnb li a {
+  display: block;
+  padding: 20px;
+  background-color: #fff;
+}
+
+/* 섹션설정 */
+
+section {
+}
+article {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  box-sizing: border-box;
+  padding: 40px 0;
+}
+
+/* 첫번째article */
+article:nth-child(1) {
+}
+
+article:nth-child(1) .txt {
+  position: absolute;
+  width: 800px;
+  background-color: antiquewhite;
+  padding: 20px;
+  top: 150px;
+  border-radius: 30px;
+  text-align: center;
+  left: 50%;
+  margin-left: -400px;
+}
+article:nth-child(1) > div {
+  width: 1000px;
+  height: 140px;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  margin-left: -500px;
+  top: 300px;
+}
+article:nth-child(1) > div > img {
+  width: 100%;
+}
+
+/* 두번째,세번째,네번째 arcitle 의 타이틀설정 */
+
+article h2 {
+  background-color: #fff;
+  text-align: center;
+  font-weight: normal;
+  font-size: 14px;
+  padding: 30px 0;
+}
+article h2 span {
+  display: block;
+  font-size: 30px;
+  font-weight: bold;
+}
+article h2 em {
+  font-style: normal;
+  font-size: 20px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* 두번째article 설정 */
+article:nth-child(2) .listBox {
+  width: 60%;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+article:nth-child(2) .listBox ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+article:nth-child(2) .listBox ul {
+  width: 100%;
+  height: 500px;
+}
+
+article:nth-child(2) .listBox li {
+  float: left;
+  width: 50%;
+}
+article:nth-child(2) .listBox li:nth-child(1) {
+  height: 100%;
+}
+article:nth-child(2) .listBox li:nth-child(2) {
+  height: 50%;
+}
+article:nth-child(2) .listBox li:nth-child(3) {
+  height: 50%;
+}
+
+/* 세번째article 설정 */
+
+article:nth-child(3) .listBox {
+  width: 60%;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+article:nth-child(3) .listBox ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+article:nth-child(3) .listBox ul {
+  width: 100%;
+  height: 200px;
+}
+
+article:nth-child(3) .listBox li {
+  float: left;
+  width: 33.3333%;
+}
+
+article:nth-child(3) .event {
+  text-align: center;
+  padding: 30px 0;
+}
+article:nth-child(3) .event span {
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 0 5px;
+  margin-left: 20px;
+  margin-right: 5px;
+}
+article:nth-child(3) .btn {
+  width: 120px;
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 30px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+/* 네번째 article 설정 */
+
+article:nth-child(4) .listBox {
+  width: 60%;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+article:nth-child(4) .listBox .tab_title {
+}
+article:nth-child(4) .listBox .tab_title ul {
+  width: 100%;
+  display: flex;
+}
+article:nth-child(4) .listBox .tab_title li {
+  width: 50%;
+  text-align: center;
+}
+
+article:nth-child(4) .listBox .tab_con {
+  width: 100%;
+  height: 450px;
+  background-color: antiquewhite;
+  margin-top: 20px;
+  position: relative;
+}
+
+article:nth-child(4) .listBox .tab_con > div {
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
+}
+article:nth-child(4) .listBox .tab_con>div.on {
+    opacity: 1;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+}
+article:nth-child(4) .listBox .tab_con>div:nth-child(2) ul {
+    width: 100%;
+    height: 100%;}
+article:nth-child(4) .listBox .tab_con>div:nth-child(2) ul::after {
+    content: "";
+    display: block;
+    clear: both;
+
+}
+article:nth-child(4) .listBox .tab_con>div:nth-child(2) li {
+float: left;
+width: 33.3333%;
+
+}
+article:nth-child(4) .listBox .tab_con>div:nth-child(2) li:nth-child(1) {
+height: 100%;
+    
+    }
+    article:nth-child(4) .listBox .tab_con>div:nth-child(2) li:nth-child(2) {
+height: 50%;
+        
+        }
+        article:nth-child(4) .listBox .tab_con>div:nth-child(2) li:nth-child(3) {
+            height: 50%;
+            
+            }
+            article:nth-child(4) .listBox .tab_con>div:nth-child(2) li:nth-child(4) {
+                height: 50%;
+                
+                }
+                article:nth-child(4) .listBox .tab_con>div:nth-child(2) li:nth-child(5) {
+                    
+                    }
+
+/* 네비설정 */
+
+nav {
+  position: fixed;
+  top: 50%;
+  left: 5%;
+  height: 220px;
+  margin-top: -110px;
+}
+nav ul {
+}
+nav li {
+  height: 50px;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  background-color: #fff;
+}
