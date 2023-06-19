@@ -1,0 +1,196 @@
+@charset 'utf8';
+
+/* 전체설정 */
+*{margin: 0;padding: 0;}
+a{text-decoration: none;color: black;}
+ul,ol {list-style: none;}
+img {vertical-align: bottom;}
+
+/* header */
+.header {width: 100%;
+height: 300px;
+position: relative;}
+
+/* header header_A */
+.header_A {display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 50px;
+border-bottom: 1px solid #bbb;}
+
+/* header_A_1_box */
+.header_A_box {width: 80%;
+height: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+border-bottom: 1px solid #bbb;}
+/* header header_A_1 */
+.header_A_1 {display: flex;
+font-size: 18px;}
+
+.header_A_1 a {color: #bbb;
+display: flex;
+align-items: center;}
+
+.header_A_1 a:nth-child(1) {}
+.header_A_1 a:nth-child(2) i{display: flex;
+margin-left: 15px;}
+.header_A_1 a:nth-child(2) i>p{font-weight: normal;}
+
+
+/* header header_A_2 */
+.header_A_2 {display: flex;
+font-size: 18px;}
+
+.header_A_2 a {color: #bbb;}
+.header_A_2 a:nth-child(1) {margin-right: 15px;}
+.header_A_2 a:nth-child(2) {}
+
+/* header header_B */
+.header_B {width: 100%;
+height: 50px;
+display: flex;
+justify-content: center;
+margin-top: 60px;}
+
+/* header header_B_box */
+.header_B_box {width: 80%;
+height: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;}
+
+/* header header_B_1 */
+.header_B_1 {display: flex;
+align-items: center;
+height: 100%;}
+
+.header_B_1 a {display: flex;
+align-items: center;
+border: 1px solid #FF8630;
+border-radius: 25px;
+height: 100%;
+padding: 0px 15px;
+background-color: #FF8630;
+color: white;}
+
+.header_B_1 p {margin-left: 15px;}
+
+/* header header_B_2 */
+.header_B_2 {display: flex;
+position: relative;
+height: 50px;}
+.header_B_2 input {border: 1px solid #bbb;
+    border-radius: 30px;
+padding: 0px 30px;}
+.header_B_2 img {width: 20px;height: 20px;
+position: absolute;
+right: 10px;
+top: 50%;
+margin-top: -10px;}
+
+
+/* header header_C */
+.header_C {width: 100%;
+display: flex;
+justify-content: center;
+height: 50px;
+margin-top: 40px;}
+
+/* header_C_box */
+.header_C_box {width: 80%;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;}
+
+/* header_C_box ul */
+.header_C_box ul {display: flex;
+justify-content: center;}
+
+/* header_C_box li */
+.header_C_box li>a {padding: 0px 20px;}
+.header_C_box li>a:hover {color: #FF8630;
+font-weight: bold;}
+
+/* header_C_box div */
+.header_C_box div {position: absolute;
+right: 0;
+display: flex;}
+.header_C_box div a {display: flex;}
+.header_C_box div a>p:nth-child(1) {padding-right: 10px;}
+.header_C_box div a>p:nth-child(2) {transform: scaleX(1.5) rotate(90deg);}
+.header_C_box div a:hover {color: #FF8630;
+    font-weight: bold;}
+
+    /* header_D */
+    .header_D {background-color: #FF8630;
+    width: 100%;
+    height: 100vh;
+position: absolute;
+z-index: -1;
+top: 0;
+left: 0;
+display: flex;
+justify-content: center;}
+
+/* header_D_box */
+.header_D_box {width: 80%;
+height: 100%;
+background-color: aquamarine;
+display: flex;}
+
+/* header_D_box_A */
+.header_D_box_A {width: 50%;
+    height: 100%;
+background-color: lightgreen;
+position: relative;}
+/* header_D_box_A_1 */
+.header_D_box_A_1 {background-image: url(../img/sub_1.jpg);
+width: 100%;
+height: 400px;
+background-position: center center;
+background-repeat: no-repeat;
+background-size: contain;
+position: absolute;
+right: 0;
+top: 40%;}
+/* header_D_box_A_2 */
+.header_D_box_A_2 {display: flex;
+position: absolute;
+bottom: 0;}
+.header_D_box_A_2 p {font-size: 18px;
+color: #bbb;}
+.header_D_box_A_2 p:nth-child(1) {}
+.header_D_box_A_2 p:nth-child(1) em{font-size: 24px;
+font-style: normal;
+font-weight: bold;
+color: black;}
+
+.header_D_box_A_2 p:nth-child(2) {position: absolute;
+width: 1px;
+height: 1px;
+left: 108.98px;
+top: 15px;
+border: 2px solid #bbb; 
+border-radius: 100%;}
+
+.header_D_box_A_2 p:nth-child(3) {padding-left: 20px;}
+.header_D_box_A_2 p:nth-child(3) em{font-size: 24px;
+font-style: normal;
+font-weight: bold;
+color: black;}
+.header_D_box_A_2 p:nth-child(3) b {font-weight: normal;
+font-size: 24px;}
+
+/* .header_D_box_B */
+.header_D_box_B {width: 50%;
+height: 100%;
+background-color: lightpink;}
+
+/* .header_D_box_B_1 */
+.header_D_box_B_1 {}
+.header_D_box_B_1 p:nth-child(1) {}
+.header_D_box_B_1 p:nth-child(2) {}

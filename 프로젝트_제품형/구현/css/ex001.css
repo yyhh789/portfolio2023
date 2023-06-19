@@ -136,6 +136,12 @@ article h2 em {
 }
 
 /* 두번째article 설정 */
+article:nth-child(2) {background-image: url(https://picsum.photos/1000/1000);
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;}
+
 article:nth-child(2) .listBox {
   width: 60%;
   background-color: #fff;
@@ -187,6 +193,20 @@ article:nth-child(3) .listBox ul {
 article:nth-child(3) .listBox li {
   float: left;
   width: 33.3333%;
+  height: 100%;
+  cursor: pointer;
+  background-image: url(../img/pro001.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  filter: grayscale(100%);
+}
+
+article:nth-child(3) .listBox li:hover {  animation: ani 1s linear infinite alternate;}
+
+@keyframes ani {
+  0% {transform: translateY(-10px);}
+  100% {transform: translateY(10px);}
 }
 
 article:nth-child(3) .event {
@@ -210,6 +230,26 @@ article:nth-child(3) .btn {
   margin: 0 auto;
   margin-top: 30px;
 }
+
+
+
+/* hidden설정 */
+.hidden {position: fixed;
+left: 10%;
+top:10%;
+width: 10%;
+height: 10%;
+background-color: red;
+display: flex;
+align-items: flex-end;
+transition: all 2s;
+overflow: hidden;}
+.hidden p {width: 50%;}
+.hidden img {height: 100%;width: auto;}
+
+.hidden:hover {width: 80%;
+height: 80%;}
+
 
 /* 네번째 article 설정 */
 
@@ -303,3 +343,50 @@ nav li {
   margin-bottom: 5px;
   background-color: #fff;
 }
+
+
+/* 팝업설정구간 */
+
+.popUp {position: fixed;
+width: 500px;
+height: 500px;
+background-color: lightcoral;
+box-shadow: 5px 5px #666;
+left: 20%;
+top: 20%;
+z-index: 999999;}
+
+.popUp p {
+  font-size: 50px;
+}
+
+.popUp span {position: absolute;
+width: 50px;
+height: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: lightcyan;
+box-shadow: 5px 5px #666;
+cursor: pointer;
+bottom: 0;
+right: -50px;}
+
+/* 메인이미지삽입 */
+.mainImg {position: fixed;
+width: 500px;
+height: 800px;
+left: 50%;
+top: 100px;
+margin-left: -250px;
+display: flex;
+align-items: flex-end;
+justify-content: center;
+z-index: 1;
+opacity: 0;
+transition: opactiy 0.8s;}
+.mainImg.on {opacity: 1;
+z-index: 900;}
+.mainImg.hold {position: absolute;
+top: 400px;}
+.mainImg img {width: 100%;}
