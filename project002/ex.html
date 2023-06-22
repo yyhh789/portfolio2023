@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+    // 변경된 값을 저장
+  var sell_price;
+  var amount;
+
+
+  // init 초기값을 지정할 수 있다.
+  function init () {
+    sell_price = document.form.sell_price.value;
+    amount = document.form.amount.value;
+    document.form.sum.value = sell_price;
+    change();
+  }
+
+
+    // add
+  // howmany 값을 1 증가 시키고, 합계를 계산.
+function add () {
+    hm = document.form.amount;
+    sum = document.form.sum;
+  hm.value ++ ;
+
+    sum.value = parseInt(hm.value) * sell_price;
+
+    }
+
+   
+
+   
+
+    // del
+
+    // howmany 값을 1 감소 시키고, 합계를 계산.
+
+    function del () {
+
+    hm = document.form.amount;
+
+    sum = document.form.sum;
+
+   
+
+    // 에러 처리 : 음수 값
+
+    if (hm.value > 1) {
+
+      hm.value -- ;
+
+      sum.value = parseInt(hm.value) * sell_price;
+
+    }
+
+    }
+
+
+
+
+
+    function change () {
+
+
+
+    hm = document.form.amount;
+
+    sum = document.form.sum;
+
+   
+
+    if (hm.value < 0) {
+
+      hm.value = 0;
+
+    }
+
+    sum.value = parseInt(hm.value) * sell_price;
+
+    } 
+
+
+
+  //-->
+
+  </script>
+
+<body>
+
+    <form name="form" method="get">
+        <input type=hidden name="sell_price" value="80000">
+        <input type="text" name="amount" value="1" size="3" onchange="change();">
+        <input type="button" value=" + " onclick="add();">
+        <input type="button" value=" - " onclick="del();"><br>
+        <input type="text" name="sum" size="13" readonly>
+        </form>
+
+    </body>
+</html>

@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="css/style2.css">
     <!-- 폰트어썸 -->
     <script src="https://kit.fontawesome.com/bfa70ac29f.js" crossorigin="anonymous"></script>
+    <!--  -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <!-- js시트 연결 -->
+    <script src="js/javascript2.js"></script>
 </head>
 <body>
     <div class="header">
@@ -64,11 +68,16 @@
                     <li><a href="#">쿠티크</a></li>
                     <li><a href="#">전체상품</a></li>
                 </ul>
-                <div>
-                    <a href="#">
+                <div class="toggle">
+                    <a href="#" class="bb">
                         <p>더보기</p>
                         <p>></p>
                     </a>
+                    <ul class="cc">
+                        <li>베스트</li>
+                        <li>야식추천</li>
+                        <li>전체상품</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -84,12 +93,34 @@
                 </div>
                 <div class="header_D_box_B">
                     <div class="header_D_box_B_1">
-                        <p>[삼양식품] 불닭볶음탕면 145g x16입</p>
-                        <p>23,120원</p>
+                        <p>[삼양식품] 불닭볶음면 140g x20입</p>
+                        <p>22,500원</p>
+                    </div>
+                    <div class="count-wrap _count">
+                        <button type="button" class="minus">-</button>
+                        <input type="text" class="inp" value="1" />
+                        <button type="button" class="plus">+</button>
+                    </div>
+                    <div class="header_D_sell">
+                        <p>총 수량 1개</p>
+                        <p></p>
+                        <p>22,500원</p>
+                    </div>
+                    <div class="header_D_sell_1">
+                        <p><span></span> 구매하기</p>
+                    </div>
+                    <div class="header_D_sell_2">
+                        <p><span></span><img src="img/tak.png" alt=""> 문의하기</p>
+                        <p><span></span><img src="img/icon-heart.png" alt="">  찜하기</p>
+                        <p><span></span><img src="img/shopping basket.png" alt=""> 장바구니</p>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="section">
+        
     </div>
     </div>
 </body>
