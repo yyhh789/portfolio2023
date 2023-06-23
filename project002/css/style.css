@@ -12,6 +12,7 @@ img {vertical-align: bottom;}
 overflow: hidden;}
 
 /* header btn 설정 */
+/* display: none; 사라졌다가 섹션1에 나타나라  */
 .header .btn{width: 100px;
 height: 100px;
 position: fixed;
@@ -482,6 +483,7 @@ top: 100px;}
                 display: none;}
 
 /* .section1_box3 */
+/* li들을 클릭했을떄 이미지가 바뀌어라 */
 .section1_box3 {position: relative;
 display: flex;
 justify-content: center;}
@@ -523,6 +525,7 @@ position: relative;}
 overflow: hidden;}
 
 /* section2 div 첫번쨰 */
+/* 섹션 애니메이션 슬라이드 구간 */
 .section2 div:nth-child(1) {text-align: center;
 margin-top: 50px;
 padding-bottom: 70px;}
@@ -752,7 +755,7 @@ align-self: center;}
 
 
 
-
+/* 아이콘들이 마우스 커서를 댓을떄 사이즈가 약간 커져라 */
 .section3 .section3_box_2_3 li:nth-child(3) a{}
 
 .section3 .section3_box_2_3 li:nth-child(3) a:nth-child(1){}

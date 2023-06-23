@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-
+    // 섹션1의box3번의 li들을 클릭했을떄 나타나라
         $('.section1_box3 li').click(function(){
 
             let i= $(this).index()
@@ -8,8 +8,11 @@ $(document).ready(function(){
             $('.section1_box2 div').hide()
             $('.section1_box2 div').eq(0).show();
             $('.section1_box2 div').eq(i+1).show();
-        })
+        });
 
+
+
+// Btn이 섹션1전에는 사라지고  섹션1에 도달했을시 나타나라
         $(window).scroll(function(){
 
             let sc = $(this).scrollTop();
@@ -24,7 +27,7 @@ $(document).ready(function(){
             if(sc<hot){
                 $('.btn').hide()
             }
-        })
+        });
     
 
 
@@ -40,7 +43,7 @@ $(document).ready(function(){
                 $('.headerB_btn_box>div').removeClass('on')
                 $(this).addClass('on')
                 
-            },)
+            },);
 
             // 3초에 한번씩 자동으로 컴퓨터가 headerB_btn_box>div를 (0,1)클릭해라
             let a =0;
@@ -51,7 +54,7 @@ $(document).ready(function(){
 
                 // trigger 핸들러를 통해 마우스를 제어하는 구조
                 $('.headerB_btn_box>div').eq(a).trigger('click')
-            },5000)
+            },5000);
 
 
 

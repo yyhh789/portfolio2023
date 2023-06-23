@@ -41,7 +41,21 @@ $('._count :button').on({
     }
 });
 
+$(window).scroll(function(){
 
+    let sc = $(this).scrollTop();
+
+    let hot = $('.section').offset().top; 
+
+
+
+    if(sc>=hot){
+        $('.sell_box').show()
+    }
+    if(sc<hot){
+        $('.sell_box').hide()
+    }
+})
 
 
 
