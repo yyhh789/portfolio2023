@@ -15,11 +15,16 @@ background-position: right;
 background-size:contain;
 overflow: hidden;}
 
-
+.sec1 .vid {position: absolute;
+z-index: 1;}
 /* sec1 menu*/
 .sec1 .menu {display: flex;
+    position: relative;
 justify-content: space-between;}
-.sec1 .menu a{}
+.sec1 .menu a{position: absolute;
+z-index: 9;
+top: 0;
+left: 0;}
 .sec1 .menu img{}
 
 
@@ -28,7 +33,8 @@ justify-content: space-between;}
 height: 180px;
 position: absolute;
 top: 630px;
-right: 0;}
+right: 0;
+z-index: 3;}
 
 .sec1 .logo2 p {display: flex;
 justify-content: flex-end;}
@@ -53,7 +59,7 @@ bottom: 0px;}
 /* sec2 */
 .sec2 {width: 100%;
 height: 100vh;
-background-color: #F48924;
+
 display: flex;
 justify-content: center;
 align-items: center;
@@ -72,7 +78,7 @@ z-index: 1;}
 
 /* sec2 nav */
 .sec2 .nav {width: 100%;
-z-index: 1;}
+z-index: 3;}
 
 .sec2 .nav ul {width: 100%;}
 
@@ -81,9 +87,11 @@ z-index: 1;}
     align-items: center;
 width: 100%;
 height: 141px;
-background-color: rgba(255, 255, 255, 0.6);}
+background-color: rgba(255, 255, 255, 0.6);
+position: relative;
+z-index: 2;}
 
-.sec2 .nav li p {}
+.sec2 .nav li p {z-index: 2;}
 
 .sec2 .nav li p>img {width: 136px;
 height: 141px;}
@@ -98,6 +106,21 @@ right: 65px;}
 .sec2 .nav li:nth-child(3) {margin-top: 57px;} 
 .sec2 .nav li:nth-child(4) {margin-top: 57px;}
 
+.sec2 .nav span{
+position: absolute;
+width: 0px;
+height: 100%;
+transition: all 0.8s linear;
+z-index: 1;}
+
+.sec2 .nav li:nth-child(1):hover span{width: 100%;
+background-color: rgba(255, 221, 0, 0.8);}
+.sec2 .nav li:nth-child(2):hover span{width: 100%;
+background-color: rgba(255, 221, 0, 0.8);}
+.sec2 .nav li:nth-child(3):hover span{width: 100%;
+background-color: rgba(78, 190, 158, 0.8);}
+.sec2 .nav li:nth-child(4):hover span{width: 100%;
+background-color: rgba(78, 190, 158, 0.8);}
 
 /* sec2 planet */
 .sec2 .planet {position: absolute;
@@ -106,7 +129,6 @@ z-index: 0;}
 /* sec3  */
 .sec3 {width: 100%;
 height: 100vh;
-background-color: #F48924;
 display: flex;
 position: relative;}
 
@@ -122,24 +144,27 @@ height: 100%;}
 
 .sec3>div a {width: 100%;
 height: 100%;
-display: block;}
+display: block;
+filter: brightness(50%);}
 
-.sec3>div:nth-child(1) a {background-image: url(../img/character1_1.png);
+.sec3>div:nth-child(1) a {background-image: url(../img/character1_2.png);
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;}
-.sec3>div:nth-child(2) a {background-image: url(../img/character2_1.png);
+.sec3>div:nth-child(2) a {background-image: url(../img/character2_2.png);
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;}
-.sec3>div:nth-child(3) a {background-image: url(../img/character4_1.png);
+.sec3>div:nth-child(3) a {background-image: url(../img/character4_2.png);
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;}
-.sec3>div:nth-child(4) a {background-image: url(../img/character3_1.png);
+.sec3>div:nth-child(4) a {background-image: url(../img/character3_2.png);
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;}
+
+.sec3>div a:hover {filter: brightness(150%);}
 
 
 
@@ -180,3 +205,60 @@ left: 50%;}
 
 .sec3 aside {position: absolute;}
 
+
+/* gallery */
+.gallery {width: 100%;
+height: 100vh;
+background-color: rgb(69, 134, 134);
+overflow: hidden;
+position: relative;}
+.gallery ul {width: 100%;
+height: 100%;}
+.gallery li {
+float: left;
+height: 300px;}
+.gallery li img {width: 100%;
+height: 100%}
+
+.gallery li:nth-child(1) {width: 30%;}
+.gallery li:nth-child(2) {width: 40%;}
+.gallery li:nth-child(3) {width: 30%;}
+.gallery li:nth-child(4) {width: 50%;
+height: 380px;}
+.gallery li:nth-child(5) {width: 50%;
+height: 380px;}
+.gallery li:nth-child(6) {width: 60%;}
+.gallery li:nth-child(7) {width: 40%;}
+
+.gallery aside {position: absolute;
+top: 0;
+left: 0;}
+
+.gallery li {filter: brightness(50%);}
+.gallery li:hover {filter: brightness(100%);}
+
+
+
+/* vid */
+.vid {width: 100%;
+height: 100vh;
+background-color: aqua;
+position: relative;}
+.vid ul {width: 100%;
+height: 100%;}
+.vid li {width: 100%;
+height: 33.3333%;
+display: flex;
+justify-content: center;
+align-items: center;
+font-weight: bold;
+font-size: 28px;}
+
+
+.vid li:nth-child(1) {background-color: #F48924;}
+.vid li:nth-child(2) {background-color: lightcoral;}
+.vid li:nth-child(3) {background-color: lightcyan;}
+
+.vid aside {position: absolute;
+top: 0;
+left: 0;}
