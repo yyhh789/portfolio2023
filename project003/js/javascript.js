@@ -6,7 +6,6 @@ $(document).ready(function(){
 
     $(window).resize(function(){
         let ht = $(window).height();
-    
         $('section').height(ht);
     });
 
@@ -29,6 +28,67 @@ $(document).ready(function(){
         $('html,body').stop().animate({scrollTop:ht*i},1400)
     });
 
+    
+// 메뉴 클릭시 sec2가 나타나라
+    $('.menu_img').click(function(e){
+        e.preventDefault()
+    
+        let i = $(this).index()
+        console.log(i);
+
+    
+        $('.sec2').css({'left':'-100%'}).stop().animate({'left':'0'},1400)
+    });
+
+    // 메뉴 back 클릭시 사라짐
+    $('.bc1').click(function(e){
+        e.preventDefault()
+    
+        let i = $(this).index()
+        console.log(i);
+    
+        $('.sec2').css({'left':'0%'}).stop().animate({'left':'-100%'},1400)
+    });
+
+
+
+    $('.nav1').click(function(e){
+        e.preventDefault()
+    
+        let i = $(this).index()
+        console.log(i);
+    
+        $('.sec2').css({'left':'0%'}).stop().animate({'left':'-100%'},1400)
+    });
+
+    $('.nav2').click(function(e){
+        e.preventDefault()
+    
+        let i = $(this).index()
+        console.log(i);
+    
+        $('.sec2').css({'left':'0%'}).stop().animate({'left':'-100%'},1400)
+    });
+
+    $('.nav3').click(function(e){
+        e.preventDefault()
+    
+        let i = $(this).index()
+        console.log(i);
+    
+        $('.sec2').css({'left':'0%'}).stop().animate({'left':'-100%'},1400)
+    });
+
+    $('.nav4').click(function(e){
+        e.preventDefault()
+    
+        let i = $(this).index()
+        console.log(i);
+    
+        $('.sec2').css({'left':'0%'}).stop().animate({'left':'-100%'},1400)
+    });
+
+
 
 
 
@@ -45,16 +105,18 @@ $(document).ready(function(){
 
 
 
-            $('html,body').stop().animate({scrollTop:prev},800)
+            $('html,body').stop().animate({scrollTop:prev},1400)
         }
         else if (delta<0){
             let next = $(this).next().offset().top 
 
 
 
-            $('html,body').stop().animate({scrollTop:next},800)
+            $('html,body').stop().animate({scrollTop:next},1400)
         }
     })
+
+
 
     $('.sec1').mousemove(function(e){
         let x = e.pageX;
@@ -113,126 +175,80 @@ $(document).ready(function(){
         $('.d_info').css({'display':'none'});
     })
 
+    // vid
+
+    $('.vv1').click(function(){
+        $('.vid_b').css({'display':'block'});
+        $('.v4').css({'display':'block'});
+        $('.v5').css({'display':'none'});  
+        $('.v6').css({'display':'none'});
 
 
-
-    // gallery
-    $('.g1').click(function(){
-        $('.hide_gallery').css({'display':'block'});
-        $('.hg1').css({'display':'block'});
-        $('.hg2').css({'display':'none'});
-        $('.hg3').css({'display':'none'});
-        $('.hg4').css({'display':'none'});
-        $('.hg5').css({'display':'none'});
-        $('.hg6').css({'display':'none'});
-        $('.hg7').css({'display':'none'});
     })
 
 
-    $('.font_x').click(function(){
-        $('.hide_gallery').css({'display':'none'});
+    $('.font_x1').click(function(){
+        $('.vid_b').css({'display':'none'});
+    })
+
+    $('.vv2').click(function(){
+        $('.vid_b').css({'display':'block'});
+        $('.v4').css({'display':'none'});
+        $('.v5').css({'display':'block'});  
+        $('.v6').css({'display':'none'});
+
+
     })
 
 
-        $('.g2').click(function(){
-            $('.hide_gallery').css({'display':'block'});
-        $('.hg1').css({'display':'none'});
-        $('.hg2').css({'display':'block'});
-        $('.hg3').css({'display':'none'});
-        $('.hg4').css({'display':'none'});
-        $('.hg5').css({'display':'none'});
-        $('.hg6').css({'display':'none'});
-        $('.hg7').css({'display':'none'});
-        })
-    
-    
-        $('.font_x').click(function(){
-            $('.hide_gallery').css({'display':'none'});
-        })
+    $('.font_x1').click(function(){
+        $('.vid_b').css({'display':'none'});
+    })
+
+    $('.vv3').click(function(){
+        $('.vid_b').css({'display':'block'});
+        $('.v4').css({'display':'none'});
+        $('.v5').css({'display':'none'});  
+        $('.v6').css({'display':'block'});
 
 
-    $('.g3').click(function(){
-        $('.hide_gallery').css({'display':'block'});
-        $('.hg1').css({'display':'none'});
-        $('.hg2').css({'display':'none'});
-        $('.hg3').css({'display':'block'});
-        $('.hg4').css({'display':'none'});
-        $('.hg5').css({'display':'none'});
-        $('.hg6').css({'display':'none'});
-        $('.hg7').css({'display':'none'});
     })
 
 
-    $('.font_x').click(function(){
-        $('.hide_gallery').css({'display':'none'});
+    $('.font_x1').click(function(){
+        $('.vid_b').css({'display':'none'});
     })
 
 
-        $('.g4').click(function(){
-            $('.hide_gallery').css({'display':'block'});
-        $('.hg1').css({'display':'none'});
-        $('.hg2').css({'display':'none'});
-        $('.hg3').css({'display':'none'});
-        $('.hg4').css({'display':'block'});
-        $('.hg5').css({'display':'none'});
-        $('.hg6').css({'display':'none'});
-        $('.hg7').css({'display':'none'});
-        })
-    
-    
-        $('.font_x').click(function(){
-            $('.hide_gallery').css({'display':'none'});
-        })
+var cursorBig = document.querySelector('.big');
+var cursorSmall = document.querySelector('.small');
 
 
-    $('.g5').click(function(){
-        $('.hide_gallery').css({'display':'block'});
-        $('.hg1').css({'display':'none'});
-        $('.hg2').css({'display':'none'});
-        $('.hg3').css({'display':'none'});
-        $('.hg4').css({'display':'none'});
-        $('.hg5').css({'display':'block'});
-        $('.hg6').css({'display':'none'});
-        $('.hg7').css({'display':'none'});
-    })
+document.addEventListener('mousemove', function(e){
+  var x = e.clientX;
+  var y = e.clientY;
+  cursorBig.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`
+});
+
+document.addEventListener('mousemove', function(e){
+  var x = e.clientX;
+  var y = e.clientY;
+  cursorSmall.style.left = x + 'px';
+  cursorSmall.style.top = y + 'px';
+});
 
 
-    $('.font_x').click(function(){
-        $('.hide_gallery').css({'display':'none'});
-    })
+document.addEventListener('mousedown', function(){
+  cursorBig.classList.add('click');
+  cursorSmall.classList.add('hover__small')
+});
 
 
-        $('.g6').click(function(){
-            $('.hide_gallery').css({'display':'block'});
-        $('.hg1').css({'display':'none'});
-        $('.hg2').css({'display':'none'});
-        $('.hg3').css({'display':'none'});
-        $('.hg4').css({'display':'none'});
-        $('.hg5').css({'display':'none'});
-        $('.hg6').css({'display':'block'});
-        $('.hg7').css({'display':'none'});
-        })
-    
-    
-        $('.font_x').click(function(){
-            $('.hide_gallery').css({'display':'none'});
-        })
+document.addEventListener('mouseup', function(){
+  cursorBig.classList.remove('click')
+  cursorSmall.classList.remove('hover__small')
+});
 
 
-    $('.g7').click(function(){
-        $('.hide_gallery').css({'display':'block'});
-        $('.hg1').css({'display':'none'});
-        $('.hg2').css({'display':'none'});  
-        $('.hg3').css({'display':'none'});
-        $('.hg4').css({'display':'none'});
-        $('.hg5').css({'display':'none'});
-        $('.hg6').css({'display':'none'});
-        $('.hg7').css({'display':'block'});
-    })
-
-
-    $('.font_x').click(function(){
-        $('.hide_gallery').css({'display':'none'});
-    })
 
 }) //제이쿼리 끝

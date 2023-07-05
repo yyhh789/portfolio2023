@@ -13,10 +13,54 @@
     <script src="js/jquery.easing.1.3.js"></script>
     <script src="js/jquery.mousewheel.min.js"></script>
     <script src="js/prefixfree.min.js"></script>
-<!-- 외부스크립트연결 -->
+    <!-- 외부스크립트연결 -->
     <script src="js/javascript.js"></script>
+    <!-- 폰트어썸 -->
+    <script src="https://kit.fontawesome.com/bfa70ac29f.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="cursor small"></div>
+    <div class="cursor big"></div>
+
+    <div class="sec2">
+        <div class="bc1">
+            <img src="img/BACK_03.png" alt="">
+        </div>
+        <div class="nav">
+            <ul>
+                <li class="nav1">
+                    
+                    <p><img src="img/mark1.png" alt=""></p>
+                    <p><img src="img/main.png" alt=""></p>
+                    <p><img src="img/mark1.png" alt=""></p>
+                    <span></span>
+                </li>
+                <li class="nav2">
+                    
+                    <p><img src="img/mark2.png" alt=""></p>
+                    <p><img src="img/menu1.png" alt=""></p>
+                    <p><img src="img/mark2.png" alt=""></p>
+                    <span></span>
+                </li>
+                <li class="nav3">
+                    
+                    <p><img src="img/mark3.png" alt=""></p>
+                    <p><img src="img/menu2.png" alt=""></p>
+                    <p><img src="img/mark3.png" alt=""></p>
+                    <span></span>
+                </li>
+                <li class="nav4">
+                    
+                    <p><img src="img/mark4.png" alt=""></p>
+                    <p><img src="img/menu3.png" alt=""></p>
+                    <p><img src="img/mark4.png" alt=""></p>
+                    <span></span>
+                </li>
+            </ul>
+        </div>
+        <div class="planet"><img src="img/planet.png" alt=""></div>
+    </div>
+
     <section class="sec1">
                 <div class="vid">
                     <video autoplay loop muted>
@@ -24,7 +68,7 @@
                     </video>
                 </div>
         <div class="menu">
-            <a href="#"><img src="img/menu.png" alt="" ></a> 
+            <img src="img/menu.png" alt=""  class="menu_img">
             <div class="logo"><img src="img/logo.png" alt=""></div>
         </div>
         <div class="logo2">
@@ -39,46 +83,8 @@
         <div class="sp3"><img src="img/spark2.png" alt=""></div>
         <div class="main_page"></div>
     </section>
-    <section class="sec2">
-        <div class="bc1">
-            <img src="img/BACK_03.png" alt="">
-        </div>
 
-        <div class="nav">
-            <ul>
-                <li>
-                    
-                    <p><img src="img/mark1.png" alt=""></p>
-                    <p><img src="img/main.png" alt=""></p>
-                    <p><img src="img/mark1.png" alt=""></p>
-                    <span></span>
-                </li>
-                <li></li>
-                <li>
-                    
-                    <p><img src="img/mark2.png" alt=""></p>
-                    <p><img src="img/menu1.png" alt=""></p>
-                    <p><img src="img/mark2.png" alt=""></p>
-                    <span></span>
-                </li>
-                <li>
-                    
-                    <p><img src="img/mark3.png" alt=""></p>
-                    <p><img src="img/menu2.png" alt=""></p>
-                    <p><img src="img/mark3.png" alt=""></p>
-                    <span></span>
-                </li>
-                <li>
-                    
-                    <p><img src="img/mark4.png" alt=""></p>
-                    <p><img src="img/menu3.png" alt=""></p>
-                    <p><img src="img/mark4.png" alt=""></p>
-                    <span></span>
-                </li>
-            </ul>
-        </div>
-        <div class="planet"><img src="img/planet.png" alt=""></div>
-    </section>
+
     <section class="sec3">
         <div class="character1">
                 <ul>
@@ -108,7 +114,6 @@
                     <li><img src="img/character4.png" alt=""></li>
                 </ul>
         </div>
-        <aside><a href="#"><img src="img/menu.png" alt=""></a></aside>
         <aside class="a_info">
             <div>
                 <img src="img/character1_1.png" alt="">
@@ -158,34 +163,62 @@
         </aside>
     </section>
     <section class="gallery">
-        <ul class="gallery_on">
-            <li class="g1"><img src="img/gallery1.jpg" alt=""></li>
-            <li class="g2"><img src="img/gallery2.jpg" alt=""></li>
-            <li class="g3"><img src="img/gallery3.jpg" alt=""></li>
-            <li class="g4"><img src="img/gallery4.jpg" alt=""></li>
-            <li class="g5"><img src="img/gallery5.jpg" alt=""></li>
-            <li class="g6"><img src="img/gallery6.jpg" alt=""></li>
-            <li class="g7"><img src="img/gallery7.jpg" alt=""></li>
-        </ul>
-        <ul class="hide_gallery">
-            <li class="hg1"><img src="img/gallery1.jpg" alt=""></li>
-            <li class="hg2"><img src="img/gallery2.jpg" alt=""></li>
-            <li class="hg3"><img src="img/gallery3.jpg" alt=""></li>
-            <li class="hg4"><img src="img/gallery4.jpg" alt=""></li>
-            <li class="hg5"><img src="img/gallery5.jpg" alt=""></li>
-            <li class="hg6"><img src="img/gallery6.jpg" alt=""></li>
-            <li class="hg7"><img src="img/gallery7.jpg" alt=""></li>
-            <aside class="font_x"><img src="img/font_x.png" alt=""></aside>
-        </ul>
-        <aside><a href="#"><img src="img/menu.png" alt=""></a></aside>
+        <div class="container">
+            <div class="card card0">
+            <div class="border">
+                <h2>Optimus Prime
+                </h2>
+                <div class="icons">
+                </div>
+            </div>
+            </div>
+            <div class="card card1">
+            <div class="border">
+                <h2>Bumble Bee</h2>
+                <div class="icons">
+                </div>
+            </div>
+            </div>
+            <div class="card card2">
+            <div class="border">
+                <h2>Megatron</h2>
+                <div class="icons">
+                </div>
+            </div>
+            </div>
+        <div class="card card3">
+            <div class="border">
+            <h2>Barricade</h2>
+            <div class="icons">
+            </div>
+            </div>
+        </div>
+        </div>
     </section>
     <section class="vid">
-        <ul>
-            <li>video</li>
-            <li>video</li>
-            <li>video</li>
+        <ul class="vid_a">
+            <li class="v1"><div class="vv1"><i class="fa fa-play" aria-hidden="true"></i></div></li>
+            <li class="v2"><div class="vv2"><i class="fa fa-play" aria-hidden="true"></i></div></li>
+            <li class="v3"><div class="vv3"><i class="fa fa-play" aria-hidden="true"></i></div></li>
         </ul>
-        <aside><a href="#"><img src="img/menu.png" alt=""></a></aside>
+        <ul class="vid_b">
+            <li class="v4">
+                <video autoplay muted controls>
+                <source src="img/1.mp4" type="video/mp4">
+                </video>
+            </li>
+            <li class="v5">
+                <video autoplay muted controls>
+                <source src="img/2.mp4" type="video/mp4">
+                </video>
+            </li>
+            <li class="v6">
+                <video autoplay muted controls>
+                <source src="img/3.mp4" type="video/mp4">
+                </video>
+            </li>
+            <aside class="font_x1"><img src="img/font_x.png" alt=""></aside>
+        </ul>
     </section>
     
 </body>
