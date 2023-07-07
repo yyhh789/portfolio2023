@@ -25,7 +25,7 @@ $(document).ready(function(){
         console.log(i);
         let ht  = $(window).height();
     
-        $('html,body').stop().animate({scrollTop:ht*i},1400)
+        $('html,body').stop().animate({scrollTop:ht*i},800)
     });
 
     
@@ -37,7 +37,7 @@ $(document).ready(function(){
         console.log(i);
 
     
-        $('.sec2').css({'left':'-100%'}).stop().animate({'left':'0'},1400)
+        $('.sec2').css({'left':'-100%'}).stop().animate({'left':'0'},800)
     });
 
     // 메뉴 back 클릭시 사라짐
@@ -47,7 +47,7 @@ $(document).ready(function(){
         let i = $(this).index()
         console.log(i);
     
-        $('.sec2').css({'left':'0%'}).stop().animate({'left':'-100%'},1400)
+        $('.sec2').css({'left':'0%'}).stop().animate({'left':'-100%'},800)
     });
 
 
@@ -58,7 +58,7 @@ $(document).ready(function(){
         let i = $(this).index()
         console.log(i);
     
-        $('.sec2').css({'left':'0%'}).stop().animate({'left':'-100%'},1400)
+        $('.sec2').css({'left':'0%'}).stop().animate({'left':'-100%'},800)
     });
 
     $('.nav2').click(function(e){
@@ -67,7 +67,7 @@ $(document).ready(function(){
         let i = $(this).index()
         console.log(i);
     
-        $('.sec2').css({'left':'0%'}).stop().animate({'left':'-100%'},1400)
+        $('.sec2').css({'left':'0%'}).stop().animate({'left':'-100%'},800)
     });
 
     $('.nav3').click(function(e){
@@ -76,7 +76,7 @@ $(document).ready(function(){
         let i = $(this).index()
         console.log(i);
     
-        $('.sec2').css({'left':'0%'}).stop().animate({'left':'-100%'},1400)
+        $('.sec2').css({'left':'0%'}).stop().animate({'left':'-100%'},800)
     });
 
     $('.nav4').click(function(e){
@@ -85,7 +85,7 @@ $(document).ready(function(){
         let i = $(this).index()
         console.log(i);
     
-        $('.sec2').css({'left':'0%'}).stop().animate({'left':'-100%'},1400)
+        $('.sec2').css({'left':'0%'}).stop().animate({'left':'-100%'},800)
     });
 
 
@@ -105,14 +105,14 @@ $(document).ready(function(){
 
 
 
-            $('html,body').stop().animate({scrollTop:prev},1400)
+            $('html,body').stop().animate({scrollTop:prev},800)
         }
         else if (delta<0){
             let next = $(this).next().offset().top 
 
 
 
-            $('html,body').stop().animate({scrollTop:next},1400)
+            $('html,body').stop().animate({scrollTop:next},800)
         }
     })
 
