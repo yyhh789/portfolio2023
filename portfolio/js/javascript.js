@@ -113,12 +113,46 @@ document.querySelectorAll(".generate-button").forEach((button) => {
 
   svg.removeChild(circle);
 
+})
 
 
+$('nav li').click(function(){
+  let i = $(this).index()
+  console.log(i);
+  $('article').removeClass('on')
+  $('article').eq(i).addClass('on')
+
+})
 
 
+$('nav li').eq(0).click(function(){
+  $('header').stop().css({}).animate({'top':'50%'},800)
+  $('header nav ul').stop().css({'display':'block'}).animate({},800)
+  $('header nav ul').stop().css({'margin-left':'1100px'}).animate({},800)
 
-});
+})
+
+$('nav li').eq(1).click(function(){
+  $('header').stop().animate({'top':'159px'},800)
+  $('header nav ul').stop().css({'display':'flex'}).animate({},800)
+  $('header nav ul').stop().css({'justify-content':'center'}).animate({},800)
+  $('header nav ul').stop().css({'margin-left':'0px'}).animate({},800)
+  $('header nav ul li').stop().css({'margin-left':'20px'}).animate({},800)
+
+})
+$('nav li').eq(2).click(function(){
+  $('header').stop().animate({'top':'159px'},800)
+
+
+})
+
+$('nav li').eq(3).click(function(){
+  $('header').stop().animate({'top':'159px'},800)
+
+
+})
+
+
 
 
 })//제이쿼리끝
