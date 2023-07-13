@@ -218,8 +218,7 @@ transition: height 0.2s, width 0.2s;}
 }
 
 
-/* article:nth-child(2) {background-color: lightcoral;
-  right:-100%;} */
+
 
 
 /* 헤더설정 */
@@ -228,9 +227,7 @@ header {z-index: 999;
   width: 100%;
   position: fixed;
   top:50%;
-  margin-top: -163px;
-
-}
+  margin-top: -163px;}
 .generate-button {text-align: center;}
 
 header nav ul {margin-left: 1100px;}
@@ -304,6 +301,7 @@ opacity: 0.5;}
 
 article:nth-child(2) {background-color: lightcoral;
   right:-100%;
+  top: -100%;
 position: relative;}
 /* 가로세로 100퍼 지우기 */
 
@@ -317,7 +315,7 @@ top: 0;}
 height: 100%;
 display: flex;
 justify-content: space-around;
-z-index: 2;}
+z-index: 3;}
 
 .art2_h2 {position: absolute;
   top: 110px;
@@ -461,16 +459,83 @@ article:nth-child(2) .art2_2 {
     article:nth-child(2) .art2_3 #art2_3_button2 i {padding-right: 10px;}
 
 
-
+/*     left: -100%;
+bottom: -100%; */
 
 article:nth-child(3) {background-color: lightcyan;
-left: -100%;
-bottom: -100%;}
+  left: -100%;
+  bottom: -100%; }
 article:nth-child(3).on{width: 100%;
 height: 100%;
 z-index: 10;
 left: 0;
 bottom: 0;}
+
+
+.container{
+  width: 70%;
+  margin: 0 auto;
+z-index: 2;}
+
+.container h1 {position: absolute;
+  top: 110px;
+  font-size: 36px;
+  left: 50%;
+  margin-left: -35.9px;
+  font-weight: bold;
+  color: #cf0af4;
+  text-shadow: 0px 0px 10px;}
+
+
+
+.container div{margin-top: 80px;}
+
+.bar{
+  background-color: #EEE;
+  padding: 2px;
+  border: 3px solid #cf0af4;
+  box-shadow: 0px 0px 5px;
+  border-radius: 25px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #FFF;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+.bar p{display: flex;
+  padding: 20px 0 20px 20px;
+  border-radius: inherit;}
+
+
+
+.learning p{
+  background-color: #e34f26;
+}
+
+.basic p{
+  background-color: #002561;
+}
+
+.intermediate p{
+  background-color: #0ea0db;
+}
+
+.advanced p{
+  background-color: #ffcc33;
+}
+
+.expert p{
+  background-color: #f7df1e;
+}
+
+
+.art3_vd {width: 100%;
+height: 100%;
+position: absolute;}
+
+.art3_vd video {object-fit: cover;
+width: 100%;
+height: 100%;}
 article:nth-child(4) {background-color: lightgoldenrodyellow;
 right: -100%;
 bottom: -100%;}
