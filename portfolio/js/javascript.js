@@ -125,6 +125,8 @@ $('nav li').click(function(){
 })
 
 
+
+
 $('nav li').eq(0).click(function(){
   $('header').stop().css({}).animate({'top':'50%'},800)
   $('header nav ul').stop().css({'display':'block'}).animate({},800)
@@ -157,12 +159,56 @@ $('nav li').eq(2).click(function(){
   $('header nav ul').stop().css({'justify-content':'center'}).animate({},800)
   $('header nav ul').stop().css({'margin-left':'0px'}).animate({},800)
   $('header nav ul li').stop().css({'margin-left':'20px'}).animate({},800)
-  
+    
+
   $('.learning p').stop().css({}).animate({'width': '80%'},1200)
+  $('.learning em').stop().css({'font-style': 'normal','text-align': 'end','width': '100%'}).animate({})
+  $('.learning b').stop().css({'font-style': 'normal','text-align': 'end','padding-right': '10px'}).animate({})
+  
+  
   $('.basic p').stop().css({}).animate({'width': '80%'},1200)
+  $('.basic em').stop().css({'font-style': 'normal','text-align': 'end','width': '100%'}).animate({})
+  $('.basic b').stop().css({'font-style': 'normal','text-align': 'end','padding-right': '10px'}).animate({})
+
   $('.intermediate p').stop().css({}).animate({'width': '40%'},1200)
+  $('.intermediate em').stop().css({'font-style': 'normal','text-align': 'end','width': '100%'}).animate({})
+  $('.intermediate b').stop().css({'font-style': 'normal','text-align': 'end','padding-right': '10px'}).animate({})
+
   $('.advanced p').stop().css({}).animate({'width': '40%'},1200)
-  $('.expert p').stop().css({}).animate({'width': '20%'},1200)
+  $('.advanced em').stop().css({'font-style': 'normal','text-align': 'end','width': '100%'}).animate({})
+  $('.advanced b').stop().css({'font-style': 'normal','text-align': 'end','padding-right': '10px'}).animate({})
+
+  $('.expert p').stop().css({}).animate({'width': '40%'},1200)
+  $('.expert em').stop().css({'font-style': 'normal','text-align': 'end','width': '100%'}).animate({})
+  $('.expert b').stop().css({'font-style': 'normal','text-align': 'end','padding-right': '10px'}).animate({})
+
+  var cnt0 = 0;
+  var cnt1 = 0;
+
+    id0 = setInterval(count0Fn, 20);
+    id1 = setInterval(count1Fn, 50);
+    id2 = setInterval(count2Fn, 80);
+    function count0Fn() {
+      cnt0++;
+      if (cnt0 > 80) {
+        clearInterval(id0);
+      } else { 
+        $('.em80').text(cnt0);
+        $('.em80').text(cnt0);
+      };
+    }
+  
+    function count1Fn() {
+      cnt1++;
+      if (cnt1 > 40) {
+        clearInterval(id1);
+      } else { 
+        $('.em40').text(cnt1);       
+        $('.em40').text(cnt1); 
+        $('.em40').text(cnt1);
+      };
+    }
+
 
 })
 
